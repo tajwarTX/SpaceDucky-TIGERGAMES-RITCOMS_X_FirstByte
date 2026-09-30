@@ -1,5 +1,7 @@
 # 🦆 Space Ducky
 
+![Space Ducky home screen](docs/images/home-screen.png)
+
 **Winner, Best Solo Game at Tiger Games '26** (8-hour game jam hosted by the Computing Organization for Multicultural Students at RIT (COMS) and FirstByte).
 
 Space Ducky is a cooperative multiplayer arcade survival game where **real-world physical contact is the only way to play**. There is no plastic controller. The controller is the connection between people: players high five, hold hands, or tap arms to close a low-voltage bio-conductive circuit and cross obstacles.
@@ -13,6 +15,14 @@ We play multiplayer games all the time, but the "friends" we meet online often s
 Up to six players gather around the screen in person. As alien obstacles approach, the game calls out a specific player's name and assigned colour. To clear it, you have to know who that person is, so players introduce themselves, learn each other's names, and make contact. A handshake or high five between the right players closes the circuit and spawns a shield on screen. Miss it and the duck crashes, then the next pilot takes a turn. Highest score wins the crew leaderboard.
 
 Background music is layered from generated audio stems (sub-bass, bassline, drums, synth keys, lead, piano arps, full drop) and each new touch adds another layer.
+
+## Screenshots
+
+| Meet Commander Ducky | Gameplay |
+|---|---|
+| ![Commander Ducky intro dialogue](docs/images/commander-ducky.png) | ![Gameplay with the duck on the moon](docs/images/gameplay-1.png) |
+| **An alien calls out a player** | **Crash screen, next pilot up** |
+| ![Alien obstacle labelled with a player's name](docs/images/gameplay-2.png) | ![Pilot crashed screen](docs/images/crash-screen.png) |
 
 ## How it works
 
@@ -41,6 +51,7 @@ All of this was built within the 8 hours.
 ```
 space-ducky/
 ├── assets/                              # duck.svg and moon.svg sprites
+├── docs/images/                         # screenshots used in this README
 ├── play.py                              # Flask + Socket.IO server and the whole game frontend
 ├── firmware/touch_trigger/touch_trigger.ino   # Arduino Nano touch-sensing sketch
 ├── requirements.txt
@@ -72,6 +83,16 @@ The serial port is auto-detected on macOS (`/dev/cu.usbserial*` or `/dev/cu.usbm
 
 - The sketch currently drives 5 channels; the game supports 6. To add the sixth, extend `touchPins` to `{4, 6, 8, 10, 12, 13}` and loop to 6.
 - The hardest part was tuning thresholds across different skin resistance levels.
+
+## Behind the scenes
+
+Built in one 8-hour sitting at RIT: a soldering station, a multimeter, and a lot of snacks.
+
+![Workbench at Tiger Games: copper-wire leads, Arduino, laptop running the game, snacks](docs/images/workbench.jpg)
+
+When it came time to fill out the Devpost submission I had no idea what to call the project, so the team name became **"I have No idea TRUST THE PROCESS"**. It worked out.
+
+<img src="docs/images/devpost-trust-the-process.jpg" alt="Devpost form with the project name 'I have No idea TRUST THE PROCESS'" width="360">
 
 ## Thanks
 
