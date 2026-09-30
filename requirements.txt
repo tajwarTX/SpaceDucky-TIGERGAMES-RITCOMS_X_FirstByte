@@ -1,0 +1,4 @@
+pyserial
+pygame
+flask
+flask-socketio
