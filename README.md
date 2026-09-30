@@ -22,13 +22,13 @@ Background music is layered from generated audio stems (sub-bass, bassline, drum
 
 ## Demo
 
-**Playing it with other people** (click to watch the full video)
+**Playing it with other people** (click to watch with sound)
 
-[![Demo video: players making contact to trigger shields](docs/images/demo-poster.jpg)](docs/videos/demo.mp4)
+[![Demo video: players making contact to trigger shields](docs/images/demo-preview.gif)](https://github.com/tajwarTX/space-ducky/raw/refs/heads/main/docs/videos/demo.mp4)
 
 **The full setup and wiring walkthrough**
 
-[![Setup walkthrough video: copper-wire leads and connections](docs/images/setup-walkthrough-poster.jpg)](docs/videos/setup-walkthrough.mp4)
+[![Setup walkthrough video: copper-wire leads and connections](docs/images/setup-walkthrough-preview.gif)](https://github.com/tajwarTX/space-ducky/raw/refs/heads/main/docs/videos/setup-walkthrough.mp4)
 
 ## Screenshots
 
