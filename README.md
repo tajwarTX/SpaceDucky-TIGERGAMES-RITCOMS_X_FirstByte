@@ -22,13 +22,13 @@ Background music is layered from generated audio stems (sub-bass, bassline, drum
 
 ## Demo
 
-**Playing it with other people** (click to watch the full clip)
+**Playing it with other people** (click to watch the full video)
 
-[![Demo: players making contact to trigger shields](docs/images/demo-preview.gif)](docs/videos/demo.mp4)
+[![Demo video: players making contact to trigger shields](docs/images/demo-poster.jpg)](docs/videos/demo.mp4)
 
 **The full setup and wiring walkthrough**
 
-[![Setup walkthrough: copper-wire leads and connections](docs/images/setup-walkthrough-preview.gif)](docs/videos/setup-walkthrough.mp4)
+[![Setup walkthrough video: copper-wire leads and connections](docs/images/setup-walkthrough-poster.jpg)](docs/videos/setup-walkthrough.mp4)
 
 ## Screenshots
 
