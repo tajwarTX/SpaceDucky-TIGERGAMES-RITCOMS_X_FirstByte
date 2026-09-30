@@ -6,6 +6,10 @@
 
 Space Ducky is a cooperative multiplayer arcade survival game where **real-world physical contact is the only way to play**. There is no plastic controller. The controller is the connection between people: players high five, hold hands, or tap arms to close a low-voltage bio-conductive circuit and cross obstacles.
 
+## The win
+
+<img src="docs/images/award-podium.jpg" alt="Tiger Games awards slide: COMS Solo category, Best Game created in a solo effort, Trust the Process" width="420">
+
 ## Why
 
 We play multiplayer games all the time, but the "friends" we meet online often stay completely virtual. Space Ducky is built so that playing together turns strangers into real-life friends.
@@ -15,6 +19,16 @@ We play multiplayer games all the time, but the "friends" we meet online often s
 Up to six players gather around the screen in person. As alien obstacles approach, the game calls out a specific player's name and assigned colour. To clear it, you have to know who that person is, so players introduce themselves, learn each other's names, and make contact. A handshake or high five between the right players closes the circuit and spawns a shield on screen. Miss it and the duck crashes, then the next pilot takes a turn. Highest score wins the crew leaderboard.
 
 Background music is layered from generated audio stems (sub-bass, bassline, drums, synth keys, lead, piano arps, full drop) and each new touch adds another layer.
+
+## Demo
+
+**Playing it with other people** (click to watch the full clip)
+
+[![Demo: players making contact to trigger shields](docs/images/demo-preview.gif)](docs/videos/demo.mp4)
+
+**The full setup and wiring walkthrough**
+
+[![Setup walkthrough: copper-wire leads and connections](docs/images/setup-walkthrough-preview.gif)](docs/videos/setup-walkthrough.mp4)
 
 ## Screenshots
 
@@ -51,7 +65,8 @@ All of this was built within the 8 hours.
 ```
 space-ducky/
 ├── assets/                              # duck.svg and moon.svg sprites
-├── docs/images/                         # screenshots used in this README
+├── docs/images/                         # screenshots and photos used in this README
+├── docs/videos/                         # demo and setup walkthrough clips
 ├── play.py                              # Flask + Socket.IO server and the whole game frontend
 ├── firmware/touch_trigger/touch_trigger.ino   # Arduino Nano touch-sensing sketch
 ├── requirements.txt
@@ -60,7 +75,7 @@ space-ducky/
 
 ## Running it
 
-**Hardware:** Arduino Nano, one wire lead per player on pins D4, D6, D8, D10, D12 (D13 for a sixth player), plus a shared return/ground that one player holds so contact closes the circuit.
+**Hardware:** Arduino Nano with one stripped-copper wire lead per player on pins D4, D6, D8, D10, D12 (D13 for a sixth player). See the setup walkthrough video above for the wiring.
 
 1. Flash `firmware/touch_trigger/touch_trigger.ino` to the Arduino at 230400 baud.
 2. Install dependencies:
